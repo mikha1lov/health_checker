@@ -1,0 +1,8 @@
+Django==1.11.16
+django-filter==2.0.0
+django-rest-swagger==2.2.0
+djangorestframework==3.9.0
+Jinja2==2.10
+Markdown==3.0.1
+MarkupSafe==1.1.0
+requests==2.20.1

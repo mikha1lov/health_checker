@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Pycharm #
+#######################
+.idea/
+.vscode/
+.env
+
+# Local database $
+db.sqlite3
