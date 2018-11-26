@@ -19,16 +19,18 @@ from django.contrib import admin
 from rest_framework import routers
 from rest_framework_swagger.views import get_swagger_view
 
+from auth.views import AuthTokenViewSet
 from checker.views import UrlViewSet
 
 schema_view = get_swagger_view(title='Health checker API')
 
 router = routers.DefaultRouter(trailing_slash=False)
 
+router.register(r'auth', AuthTokenViewSet, base_name='auth')
 router.register(r'url', UrlViewSet)
 
 urlpatterns = [
-    url(r'^v1/$', schema_view),
+    url(r'^$', schema_view),
     url(r'^v1/', include(router.urls)),
     url(r'^admin/', admin.site.urls),
 ]

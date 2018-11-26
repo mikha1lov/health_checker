@@ -10,7 +10,7 @@ from checker.serializers import UrlSerializer
 class UrlViewSet(viewsets.ModelViewSet):
     """
     list:
-    Get url with updated status
+    Get urls with updated status
     """
 
     queryset = Url.objects.all()
